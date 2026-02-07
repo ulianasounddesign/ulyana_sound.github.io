@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ulyana | game audio</title>
+  <title>nick gerasimov | game audio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,7 +50,7 @@
   <canvas id="canvas"></canvas>
 
   <div class="content">
-    <h1>ULYANA SOUND DESIGN</h1>
+    <h1>NICK GERASIMOV SOUND DESIGN</h1>
 
     <!-- Слайдер с играми -->
     <h2 class="section-title">Featured Sound Design Projects</h2>
@@ -70,7 +70,7 @@
         <div class="slide active" data-text="<strong>Weltkrieg 1 Firestorm (iOS / Android)</strong><br>- Lead Sound Designer for weapon audio, artillery, and explosions, focusing on impact, realism, and gameplay readability<br>- Full FMOD integration, including event architecture, parameter-driven systems, mixing, and runtime optimization<br>- Delivered final audio mastering, balancing power, detail, and spatial clarity throughout gameplay">
           <iframe src="https://www.youtube.com/embed/ZUR27avriBE?rel=0&modestbranding=1&iv_load_policy=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
-<div class="slide" data-text="<strong>Deadside (PC / PS5 / Xbox Series X|S)</strong><br>- Lead Sound Designer responsible for weapon, vehicle, and environmental audi<br>- Utilized Impulse Response (IR) reverberation to deliver realistic and dynamic spatial soundscapes<br>- Oversaw audio asset management and workflow optimization within Unreal Engine, ensuring efficient production pipelines and high-quality audio integration">
+                <div class="slide" data-text="<strong>Deadside (PC / PS5 / Xbox Series X|S)</strong><br>- Lead Sound Designer responsible for weapon, vehicle, and environmental audi<br>- Utilized Impulse Response (IR) reverberation to deliver realistic and dynamic spatial soundscapes<br>- Oversaw audio asset management and workflow optimization within Unreal Engine, ensuring efficient production pipelines and high-quality audio integration">
           <iframe src="https://www.youtube.com/embed/vV7oKxI_5eA?rel=0&modestbranding=1&iv_load_policy=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
 
@@ -145,7 +145,7 @@
     const rows = Math.ceil(height / (hexRadius * Math.sqrt(3)/2)) + 3;
     const cols = Math.ceil(width / hexSpacing) + 1;
     const mouse = { x: -1000, y: -1000 };
-window.addEventListener('mousemove', e => {
+        window.addEventListener('mousemove', e => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
     });
@@ -171,7 +171,7 @@ window.addEventListener('mousemove', e => {
       }
       ctx.closePath();
       let alpha = (0.05 + 0.05 * Math.sin(phase) + highlight) * alphaScale;
-      ctx.strokeStyle = rgba(255,255,255,${alpha});
+      ctx.strokeStyle = `rgba(255,255,255,${alpha})`;
       ctx.lineWidth = 1;
       ctx.stroke();
     }
